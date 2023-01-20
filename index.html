@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<title>ToDo приложение</title>
+</head>
+<body>
+	<h1 class="title">Список задач</h1>
+
+	<div class="container">
+		<!-- Form -->
+		<div class="card" >
+			<div class="card-header">Добавить новую задачу</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="taskInput" id="taskInput" placeholder="Текст задачи" required>
+						<small id="emailHelp" class="form-text">Что делаем, сколько времени тратим, какой результат получаем.</small>
+					</div>
+					<button type="submit" class="btn active">Добавить</button>
+				</form>
+			</div>
+		</div>
+		<!-- //Form  -->
+		<!-- <button id="removeDoneTasks" class="btn btn-secondary mt-4 float-right">Удалить выполненные задачи</button> -->
+
+		<!-- List of tasks -->
+		<div class="card">
+			<div class="card-header">Задачи</div>
+			<ul id="tasksList" class="tasksList">
+
+				<li id="emptyList" class="emptyList">
+					<img src="./img/leaf.svg" alt="Empty" width="48" class="icon">
+					<div class="empty-list__title">Список дел пуст</div>
+				</li>
+
+				<!-- <li class="taskItem">
+					<span class="taskTitle">Купить молоко</span>
+					<div class="taskItem__buttons">
+						<button type="button" data-action="done" class="btn-action">
+							<img src="./img/tick.svg" alt="Done" width="18" height="18">
+						</button>
+						<button type="button" data-action="delete" class="btn-action">
+							<img src="./img/cross.svg" alt="Done" width="18" height="18">
+						</button>
+					</div>
+				</li> -->
+
+			</ul>
+		</div>
+		<!-- //List of tasks -->
+
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
